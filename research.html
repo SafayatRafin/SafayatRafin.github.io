@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Safayat Ahmad Rafin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            text-align: center;
+        }
+
+        header {
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .research-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .research-box {
+            background: #001b2e;
+            border: 2px solid #004e92;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .research-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .research-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffdd57;
+        }
+
+        .research-box p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #001b2e;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .modal-content h3 {
+            color: #ffdd57;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .modal-content .collaborators {
+            font-style: italic;
+            margin-top: 1rem;
+            color: #ffdd57;
+        }
+        .modal-content button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #ffdd57;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .modal-content button:hover {
+            background: #e6c144;
+        }
+
+        footer {
+            background: #000428;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cv_publications.html">CV/Publications</a>
+        </nav>
+        
+    </header>
+    <h1>Research Topics</h1>
+    <div class="research-container">
+        <div class="research-box" >
+            <h3 >Will Upload when done.</h3>
+            
+        </div>
+        <div class="research-box" >
+            <h3 >Will Upload when done.</h3>
+        </div>
+        <div class="research-box" >
+            <h3 >Will Upload when done.</h3>
+        </div>
+        <div class="research-box" >
+            <h3 >Will Upload when done.</h3>
+        </div>
+        <div class="research-box" >
+            <h3 >Will Upload when done.</h3>
+        </div>
+        <div class="research-box" >
+            <h3 >Will Upload when done.</h3>
+        </div>
+    </div>
+
+    <div class="modal" id="researchModal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Modal Title</h3>
+            <p id="modalDescription">Modal description goes here.</p>
+            <p class="collaborators" id="modalCollaborators">Collaborators: TBD</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Safayat Ahmad Rafin.
+        </p>
+        <p class="address">Email: <a href="mailto:safayatrafin@gmail.com">safayatrafin@gmail.com</a></p>
+    </footer>
+
+    <script>
+        function showModal(title, description, collaborators) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('modalCollaborators').textContent = collaborators;
+            document.getElementById('researchModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('researchModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

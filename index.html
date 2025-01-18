@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafin Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(to bottom, #000428, #004e92);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: none;
+            background: #ffdd57;
+            color: #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background: #e6c144;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about {
+            background: #001021;
+        }
+
+        .about h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #000428;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Safayat Ahmad Rafin</h1>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="cv_publications.html">CV/Publications</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Exploring the Wonders of the Universe</h2>
+        <p>Welcome to my personal website! I am an undergraduate student studying in Electrical and Electronics Engineering.</p>
+        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+    </div>
+
+    <section class="about" id="about">
+        <h3>About Me</h3>
+        <p>I have a particular interest in how cutting-edge engineering tools, such as advanced simulations and high-performance computing, can be applied to areas like space exploration, telecommunications, or renewable energy systems.</p>
+        <p>I finished my schooling from AFSC and went to NDC for college.Currently I am pursuing my undergrad at BUET.</p>
+        <a href="about.html" style="color: #ffdd57; text-decoration: none; font-size: 1.2rem;">Read More</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Safayat Ahmad Rafin.
+        </p>
+        <p class="address">Email: <a href="mailto:safayatrafin@gmail.com">safayatrafin@gmail.com</a></p>
+    </footer>
+</body>
+</html>
